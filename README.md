@@ -1,5 +1,5 @@
 # FastWVC
-A local search algorithm to solve the NP-Hard Minimum-Weighted Vertex Cover (MWVC) problem. This is my C++ implementation of the original FastWVC algorithm with some slight changes, referenced from the paper _Towards faster local search for minimum weight vertex cover on massive graphs_, published in 2018. A copy of the paper is uploaded in this repository. 
+A local search algorithm to solve the NP-Hard Minimum-Weighted Vertex Cover (MWVC) problem. This is my C++ implementation of the original FastWVC algorithm with some slight changes, referenced from the paper _Towards faster local search for minimum weight vertex cover on massive graphs_ (2018). A copy of the paper is uploaded in this repository. 
 
 ## Stochastic Local Search
 Instead of employing a typical deterministic universal, optimal or approximation algorithm, local search is a heuristic "stop anytime" method which moves between candidate solutions by applying local changes, until a candidate is deemed sufficiently optimal or until the time bound is reached. "Stochastic" implies an aspect of randomness in this process. In this case, local changes are applied by removing and then adding (somewhat random) candidate nodes from the current cover to reach a new candidate solution, until it has been running for 2 seconds. Details are commented in `fastwvc.cpp`.
